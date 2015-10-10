@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Feihong Hsu -- Author -- github.com/feihong
+
+# THANKS
+
+    Angela Hsu, Kim Dai, Chiao Hsieh
+
+# TECHNOLOGY COLOPHON
+
+    HTML5 Boilerplate
+    Jekyll
+    Github Pages
