@@ -129,7 +129,33 @@ article {
   width: 48rem;
 }
 
+code {
+  border: thin solid lightgray;
+  border-radius: 2px;
+  padding: 1px 3px;
+  background-color: mintcream;
+  font-size: 1.1rem;
+}
 
+section h5 {
+  text-align: center;
+  margin: 1em 0 0 0;
+}
+
+section {
+  border: thin solid lightgray;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+button.hint {
+  margin-right: 0.5rem;
+}
+
+nav {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
 
 /* ==========================================================================
    Helper classes
