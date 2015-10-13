@@ -95,6 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+p, div, section, iframe {
+  margin: 1.3rem 0 1.3rem 0;
+}
+
 a, a:visited {
   text-decoration: underline;
   color: #333;
@@ -137,12 +141,12 @@ code {
   font-size: 1.1rem;
 }
 
-section h5 {
+.exercise h5, .note h5, .tip h5 {
   text-align: center;
-  margin: 1em 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
-section {
+.exercise, .note, .tip {
   border: thin solid lightgray;
   padding: 0 1rem;
   margin-bottom: 1rem;

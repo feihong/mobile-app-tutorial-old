@@ -1,5 +1,7 @@
 $(function() {
-  $('section.exercise').prepend('<h5>Exercise</h5>');
+  $('.exercise').prepend('<h5>Exercise</h5>');
+  $('.note').prepend('<h5>Note</h5>');
+  $('.tip').prepend('<h5>Tip</h5>');
 
   $('.hint').each(function() {
     var hint = $(this);
