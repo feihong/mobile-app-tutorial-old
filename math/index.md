@@ -4,7 +4,7 @@ title: Math
 
 Now it's time to put some of the skills you acquired to tackle some basic math problems. Create a new project in App Inventor and name it "Math". Build the screen shown in the following image:
 
-![]({{ base }}/img/math/math-screen.png)
+![]({{ site.baseurl }}/img/math/math-screen.png)
 
 <div class="exercise">
   <p>Add some behavior to your program to check that the user entered the correct answer and congratulate her if she did. If her answer wasn't correct, give her a note of encouragement.</p>
@@ -12,11 +12,11 @@ Now it's time to put some of the skills you acquired to tackle some basic math p
 
 OK, that's not very interesting, right? Every player will solve the same math problem every time they use your app. Let's make it so that the two numbers are random. First, let's rearrange the screen like so:
 
-![]({{ base }}/img/math/math-rearranged.png)
+![]({{ site.baseurl }}/img/math/math-rearranged.png)
 
 Now, go to the Blocks interface and add the following blocks to your program:
 
-![]({{ base }}/img/math/math-blocks.png)
+![]({{ site.baseurl }}/img/math/math-blocks.png)
 
 Run your app and observe that the numbers are different every time you refresh.
 
@@ -36,7 +36,7 @@ Run your app and observe that the numbers are different every time you refresh.
 
 When it comes to math, there is much more than just numerical computations. We can also use make a randomized word problem! Create a new project called "Popejet" and make the screen look like this:
 
-![]({{ base }}/math/popejet-designer.png)
+![]({{ site.baseurl }}/math/popejet-designer.png)
 
 The text is kinda long, so you might want to copy and paste it into App Inventor:
 
@@ -44,7 +44,7 @@ The text is kinda long, so you might want to copy and paste it into App Inventor
 
 Note here that we didn't split up the description into separate labels. This would be awkward because of how long the description label needs to be to hold all that text. Instead, you can put the variable names inside square brackets, and just replace the variables with their values inside a `Screen1.Initialize` block:
 
-![]({{ base }}/img/math/popejet-blocks.png)
+![]({{ site.baseurl }}/img/math/popejet-blocks.png)
 
 <div class="exercise">
   <p>Add the logic in Blocks to check that the user submitted the correct answer to the problem. Keep this equation in mind as you figure out how to put together the blocks to compute the answer:

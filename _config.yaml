@@ -1,3 +1,5 @@
+baseurl: "/mobile-app-tutorial"
+
 defaults:
   -
     scope:

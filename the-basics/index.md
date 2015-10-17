@@ -2,7 +2,7 @@
 title: The Basics
 ---
 
-Sign into [App Inventor](http://ai2.appinventor.mit.edu/) in your browser, then download this [lovely image]({{ base }}/img/the-basics/marmoset.jpg) to your computer.
+Sign into [App Inventor](http://ai2.appinventor.mit.edu/) in your browser, then download this [lovely image]({{ site.baseurl }}/img/the-basics/marmoset.jpg) to your computer.
 
 Follow the steps in the video below to create your first interface:
 

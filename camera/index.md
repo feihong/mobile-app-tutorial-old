@@ -3,7 +3,7 @@ title: Camera
 ---
 Create a new project in App Inventor, and name it "Camera". To start, drag and drop components in the Designer to replicate the screen below:
 
-![]({{ base }}/img/camera/camera-interface.png)
+![]({{ site.baseurl }}/img/camera/camera-interface.png)
 
 Now watch the following video to understand the behaviors that we are going to add to this program:
 
@@ -30,11 +30,11 @@ Now when you run your app, you'll see some text that looks something like this: 
 
 Taking a picture for yourself is nice, but wouldn't it be cool to share your pictures with friends? Let's add a Share button! Arrange the components in the Block interface so they look like this:
 
-![Designer Interface]({{ base }}/img/camera/share-button.png)
+![Designer Interface]({{ site.baseurl }}/img/camera/share-button.png)
 
 Now go into the Blocks interface and add a `ShareButton.Click` block. Inside of that, add a `Sharing1.ShareFile` block. The `Sharing1.ShareFile` block has one slot, representing the file that you wish to share. Try dragging the `get image` block into this slot. Unfortunately, an angry red triangle will appear, indicating an error:
 
-![]({{ base }}/img/camera/get-image-error.png)
+![]({{ site.baseurl }}/img/camera/get-image-error.png)
 
 Why can't we put `get image` there? It's because `image` is a variable that is only available to the `Camera1.Picture` block, so it cannot be used in other blocks! To solve this problem, we must use a global variable:
 
@@ -72,6 +72,8 @@ OK, that works, but is it the best solution to the problem? Why should we let th
 
 <div class="exercise">
   <p>Disable <code>ShareButton</code> by unchecking its Enabled checkbox in the Properties sidebar of the Designer interface. Then add another block to <code>Camera1.AfterPicture</code> that re-enables it.</p>
+
+  <p class="hint">You'll need to use the <code>true</code> block in the Logic section of the Blocks sidebar</p>
 </div>
 
 Hooray, now the Share button can't be clicked until after a picture has been taken! Now the `if` block inside of `ShareButton.Click` isn't even necessary anymore—you can safely delete it.
