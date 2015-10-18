@@ -12,8 +12,8 @@ title: Mobile App Tutorial
 - [Camera](camera)
 - [Math](math)
 - [Canvas](canvas)
+- [QR Code](qr-code)
 - Location
-- QR code scanner
 - Server (distance, qr codes)
 - Server database
 - Networking
