@@ -36,7 +36,7 @@ Run your app and observe that the numbers are different every time you refresh.
 
 When it comes to math, there is much more than just numerical computations. We can also use make a randomized word problem! Create a new project called "Popejet" and make the screen look like this:
 
-![]({{ site.baseurl }}/math/popejet-designer.png)
+![]({{ site.baseurl }}/img/math/popejet-designer.png)
 
 The text is kinda long, so you might want to copy and paste it into App Inventor:
 
