@@ -17,7 +17,9 @@ It can be useful to think of a program as the script for a stage play. In this c
 <div class="exercise">
   <p>Use the Blocks interface to create behavior shown in the video above.</p>
 
-  <p class="hint">You only need 5 blocks to complete this exercise. Take it one step at a time. Think about which component you need to use, and what kind of block within that component will be useful. Remember that each block will tell you what it does if you hover over it. If you get stuck, just ask for help.</p>
+  <p class="hint">You only need 5 blocks to complete this exercise. Take it one step at a time. Think about which component you need to use, and what kind of block within that component will be useful. Remember that most blocks will tell you what they do if you hover over them. If you get stuck, just ask for help.</p>
+
+  <p class="hint">You need to make use of the <code>set Image1.Picture</code> block.</p>
 </div>
 
 Run your app again to verify that it works as expected.
@@ -54,16 +56,18 @@ In general, global variables are more work to deal with than local variables, bu
   <p>Inside MIT AI2 Companion (running on your phone), the app automatically refreshes when you make changes in App Inventor (in your browser). However, you sometimes want to refresh the state of your app without making any changes. The easiest way to do this is to go to the Designer interface, select any component, and toggle one of the checkboxes in the Properties sidebar. For example, in the Camera project, you could select <code>TakePictureButton</code>, click its Enabled checkbox, then click the checkbox again.</p>
 </div>
 
-Your program actually has a small bug right now. Refresh the app on the phone (that is, restore it to state where no picture is showing), and press the Share button. What happens?
+Your program actually has a small bug right now. Refresh the app on the phone (that is, restore it to the state where no picture is showing), and press the Share button. What happens?
 
 <div class="exercise">
-  <p>The <code>Sharing1.ShareFile</code> block can't do its work because the global variable <code>imageFile</code> doesn't have a reasonable value. To see what value <code>file</code> has before you take a picture, put a <code>Notifier1.ShowAlert[get global file]]</code> block inside of <code>ShareButton.Click</code>.</p>
+  <p>The <code>Sharing1.ShareFile</code> block can't do its work because the global variable <code>imageFile</code> doesn't have a reasonable value. To see what value <code>imageFile</code> has before you take a picture, put a <code>Notifier1.ShowAlert[get global imageFile]]</code> block inside of <code>ShareButton.Click</code>.</p>
 </div>
 
-So, `imageFile` gets set to a somewhat weird value by default, but it doesn't have to be that way. You'll notice that the `initialize global file` block has an empty slot, so you can set the value yourself so that you know for certain what it is.
+So, `imageFile` gets set to the number `0` by default, but it doesn't have to be that way. You'll notice that the `initialize global file` block has an empty slot, so you can set the value yourself so that you know for certain what it is.
 
 <div class="exercise">
   <p>Initialize global variable <code>imageFile</code> with an empty <code>Text</code> block (one that has no value). Also add a block to <code>ShareButton.Click</code> that prevents sharing from happening if the value of <code>imageFile</code> is empty text.</p>
+
+  <p class="hint">At first, there doesn't seem to be an <code>≠</code> block, but if you drag the <code>=</code> block out you can use its dropdown to change it to an <code>≠</code> block.</p>
 </div>
 
 Run your app now to verify that no error message appears when you press the Share button before taking a picture.
@@ -71,12 +75,12 @@ Run your app now to verify that no error message appears when you press the Shar
 OK, that works, but is it the best solution to the problem? Why should we let the user click the button at all if a picture hasn't been taken yet?
 
 <div class="exercise">
-  <p>Disable <code>ShareButton</code> by unchecking its Enabled checkbox in the Properties sidebar of the Designer interface. Then add another block to <code>Camera1.AfterPicture</code> that re-enables it.</p>
+  <p>Disable <code>ShareButton</code> by unchecking its Enabled checkbox in the Properties sidebar of the Designer interface. Then add another block to <code>Camera1.AfterPicture</code> that enables it.</p>
 
-  <p class="hint">You'll need to use the <code>true</code> block in the Logic section of the Blocks sidebar</p>
+  <p class="hint">You'll need to use the <code>true</code> block in the Logic group of the Blocks sidebar.</p>
 </div>
 
-Hooray, now the Share button can't be clicked until after a picture has been taken! Now the `if` block inside of `ShareButton.Click` isn't even necessary anymore—you can safely delete it.
+Hooray, now the Share button can't be clicked until after a picture has been taken! Now the `if` block inside of `ShareButton.Click` isn't even necessary anymore—you can safely get rid of it (but don't delete the blocks inside of it).
 
 In this chapter of the tutorial, you learned about the `Camera` widget and the concept of global variables. You also hopefully started to get a sense of the process of programming. Roughly speaking, it goes something like this:
 
