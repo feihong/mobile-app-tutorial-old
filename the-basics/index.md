@@ -4,6 +4,10 @@ title: The Basics
 
 Sign into [App Inventor](http://ai2.appinventor.mit.edu/) in your browser, then download this [lovely image]({{ site.baseurl }}/img/the-basics/marmoset.jpg) to your computer.
 
+<div class="tip">
+  <p>Before you begin, we highly recommend that you <a href="../autoplay">turn off Autoplay on YouTube</a>.</p>
+</div>
+
 Follow the steps in the video below to create your first interface:
 
 <iframe width="480" height="360" src="https://www.youtube.com/embed/Bz5FVfCF9uQ" frameborder="0" allowfullscreen></iframe>
