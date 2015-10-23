@@ -13,7 +13,7 @@ title: Mobile App Tutorial
 - [Math](math)
 - [Canvas](canvas)
 - [QR Code](qr-code)
-- Networking
+- [Networking](networking)
 - Location
 - Server (distance, qr codes)
 - Sequence (add previous numbers together)
