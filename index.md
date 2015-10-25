@@ -14,8 +14,8 @@ title: Mobile App Tutorial
 - [Canvas](canvas)
 - [QR Code](qr-code)
 - [Networking](networking)
-- Location
-- Server (distance, qr codes)
-- Sequence (add previous numbers together)
+- [Location](location)
+- Server
 - Exercises
+- Conclusion
 - [Appendix](appendix)
